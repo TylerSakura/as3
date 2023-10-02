@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ba421872f932e4744a21ec206b7ade75
+guid: f5bfd68aa8cbecb438703ad16abaf544
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PacStudent_0
+      name: Ghost4B_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 157
-        width: 34
-        height: 82
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74ecb81d0f734d942b22106544b82f75
-      internalID: -1344608003
+      spriteID: 9fd480be106166e4da64a7f869eeded6
+      internalID: -2090502349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PacStudent_1
+      name: Ghost4B_1
       rect:
         serializedVersion: 2
-        x: 176
-        y: 157
-        width: 34
-        height: 82
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,50 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee28ab08c14f874088c9288fec135ba
-      internalID: 1059873736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacStudent_2
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 29
-        width: 34
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 301e85271d4287442b7ccdb8f072dee2
-      internalID: 1310986963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PacStudent_3
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 29
-        width: 34
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04aa563814573c0429988452ff88fd85
-      internalID: -491945748
+      spriteID: e12fbc81cc4ab9f458a25015c65fc57a
+      internalID: 1199204215
       vertices: []
       indices: 
       edges: []
@@ -201,10 +159,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PacStudent_0: -1344608003
-      PacStudent_1: 1059873736
-      PacStudent_2: 1310986963
-      PacStudent_3: -491945748
+      Ghost4B_0: -2090502349
+      Ghost4B_1: 1199204215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

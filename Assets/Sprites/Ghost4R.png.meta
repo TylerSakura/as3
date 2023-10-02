@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c36bcdab85d36674ea466514383a8cc3
+guid: ec97fb7572d76674da335596fc22979c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Power_0
+      name: Ghost4R_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5ce5d7364f2b17439b53fbbfaff760c
-      internalID: 1021345938
+      spriteID: d05e320c8d379b04c9ea831a3539068b
+      internalID: 883289982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Power_1
+      name: Ghost4R_1
       rect:
         serializedVersion: 2
         x: 0
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c917b7fff3d27aa4f98d489cdc31d403
-      internalID: 1361367365
+      spriteID: d891d0bb4da4e5c4e82c0c5ad1688fb0
+      internalID: 610832630
       vertices: []
       indices: 
       edges: []
@@ -159,8 +159,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Power_0: 1021345938
-      Power_1: 1361367365
+      Ghost4R_0: 883289982
+      Ghost4R_1: 610832630
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

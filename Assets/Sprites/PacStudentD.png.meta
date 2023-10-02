@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c36bcdab85d36674ea466514383a8cc3
+guid: 686bbb6bb6a7ce643a9065870e923fd5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Power_0
+      name: PacStudentD_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5ce5d7364f2b17439b53fbbfaff760c
-      internalID: 1021345938
+      spriteID: c69cdfc7617a5ea4e9d77573a218d670
+      internalID: 1399918054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Power_1
+      name: PacStudentD_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2694c489658239e4aba859df3501f7d7
+      internalID: 801578269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacStudentD_2
       rect:
         serializedVersion: 2
         x: 0
@@ -142,8 +163,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c917b7fff3d27aa4f98d489cdc31d403
-      internalID: 1361367365
+      spriteID: cb10dbf7f12e35b4a9c2f4176ee7e28b
+      internalID: 1170254063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PacStudentD_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddde7263b1a91d64c93a986f4735fcf3
+      internalID: -1248393446
       vertices: []
       indices: 
       edges: []
@@ -159,8 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Power_0: 1021345938
-      Power_1: 1361367365
+      PacStudentD_0: 1399918054
+      PacStudentD_1: 801578269
+      PacStudentD_2: 1170254063
+      PacStudentD_3: -1248393446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
