@@ -3344,6 +3344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210612627}
   - component: {fileID: 210612626}
+  - component: {fileID: 210612628}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -3382,6 +3383,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &210612628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210612625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7609896c5af5fc34c888ec63d3a8b266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outsideCornerSprite: {fileID: 21300000, guid: 43de8b4d90983154ca8f3f61da2199bb, type: 3}
+  outsideWallSprite: {fileID: 21300000, guid: aa7bc6189dced6141b81700bd41ea2e1, type: 3}
+  insideCornerSprite: {fileID: 21300000, guid: 9fd4af38d55e132428f7e3de52dd78d1, type: 3}
+  insideWallSprite: {fileID: 21300000, guid: ab024f97f3bc5b245b56ac646dff6a39, type: 3}
+  standardPelletSprite: {fileID: 21300000, guid: a336675fe012d7849b715cd60e71fba9, type: 3}
+  powerPelletSprite: {fileID: 1319974750, guid: 626d83a564609c74894ddc967804dee3, type: 3}
+  tJunctionSprite: {fileID: 21300000, guid: 5517b106e5bf1d94faeb2085efa94de5, type: 3}
 --- !u!1 &430555563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3548,7 +3568,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20.54
+  orthographic size: 23.06
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6352,7 +6372,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 1319974750, guid: 626d83a564609c74894ddc967804dee3, type: 3}
       - {fileID: 5863438, guid: 626d83a564609c74894ddc967804dee3, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -12, y: 11, z: 0}
