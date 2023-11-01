@@ -75,7 +75,7 @@ public class LevelGenerator : MonoBehaviour
                 if (spriteToUse != null)
                 {
                     GameObject tile = new GameObject("Tile_" + x + "_" + y);
-                    tile.transform.position = new Vector3(x * cellSize.x - 17.28f, -y * cellSize.y + 18.56f, 0); // 使用Grid的Cell Size来设置位置
+                    tile.transform.position = new Vector3(x * cellSize.x - 17.28f, -y * cellSize.y + 18.56f, 0); 
                     SpriteRenderer renderer = tile.AddComponent<SpriteRenderer>();
                     renderer.sprite = spriteToUse;
                     tile.transform.SetParent(transform);
