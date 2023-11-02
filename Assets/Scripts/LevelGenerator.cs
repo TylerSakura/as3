@@ -47,28 +47,37 @@ public class LevelGenerator : MonoBehaviour
             for (int x = 0; x < levelMap.GetLength(1); x++)
             {
                 Sprite spriteToUse = null;
+                bool isWall = false;
+                bool isPellet = false;
                 switch (levelMap[y, x])
                 {
                     case 1:
                         spriteToUse = outsideCornerSprite;
+                        isWall = true;
                         break;
                     case 2:
                         spriteToUse = outsideWallSprite;
+                        isWall = true;
                         break;
                     case 3:
-                        spriteToUse = insideCornerSprite; 
+                        spriteToUse = insideCornerSprite;
+                        isWall = true;
                         break;
                     case 4:
                         spriteToUse = insideWallSprite;
+                        isWall = true;
                         break;
                     case 5:
                         spriteToUse = standardPelletSprite;
+                        isPellet = true;
                         break;
                     case 6:
                         spriteToUse = powerPelletSprite;
+                        isPellet = true;
                         break;
                     case 7:
                         spriteToUse = tJunctionSprite;
+                        isWall = true;
                         break;
                 }
 
@@ -80,6 +89,17 @@ public class LevelGenerator : MonoBehaviour
                     renderer.sprite = spriteToUse;
                     tile.transform.SetParent(transform);
                     RotateTile(x, y, tile);
+                    if (isWall)
+                    {
+                        tile.layer = LayerMask.NameToLayer("Wall");
+                        tile.AddComponent<BoxCollider2D>();
+                    }
+
+                    if (isPellet)
+                    {
+                        tile.layer = LayerMask.NameToLayer("Pellet");
+                        tile.AddComponent<BoxCollider2D>();
+                    }
                 }
             }
         }

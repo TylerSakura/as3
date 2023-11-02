@@ -4,15 +4,21 @@ public class PacStudentController : MonoBehaviour
 {
     public float speed = 5.0f;
     public LayerMask wallLayer;
+    public AudioClip eatingClip;
+    public AudioClip movingClip;
 
     private Vector2 lastInput;
     private Vector2 currentInput;
     private Vector2 nextPosition;
     private bool isLerping;
+    private Animator animator;
+    private AudioSource audioSource;
 
     void Start()
     {
         nextPosition = transform.position;
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -34,10 +40,52 @@ public class PacStudentController : MonoBehaviour
 
     void HandleInput()
     {
-        if (Input.GetKey(KeyCode.W)) lastInput = Vector2.up;
-        else if (Input.GetKey(KeyCode.A)) lastInput = Vector2.left;
-        else if (Input.GetKey(KeyCode.S)) lastInput = Vector2.down;
-        else if (Input.GetKey(KeyCode.D)) lastInput = Vector2.right;
+        if (Input.GetKey(KeyCode.W))
+        {
+            lastInput = Vector2.up;
+            SetAnimationBools("W");
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            lastInput = Vector2.left;
+            SetAnimationBools("A");
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            lastInput = Vector2.down;
+            SetAnimationBools("S");
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            lastInput = Vector2.right;
+            SetAnimationBools("D");
+        }
+    }
+
+    void SetAnimationBools(string activeBool)
+    {
+        animator.SetBool("W", activeBool == "W");
+        animator.SetBool("A", activeBool == "A");
+        animator.SetBool("S", activeBool == "S");
+        animator.SetBool("D", activeBool == "D");
+    }
+
+    private bool CheckIfEating(Vector3 direction)
+    {
+        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction, 1.28f, LayerMask.GetMask("Pellet"));
+        bool ateSomething = false;
+
+        foreach (var hit in hits)
+        {
+            if (hit.collider != null)
+            {
+                audioSource.PlayOneShot(eatingClip);
+                Destroy(hit.collider.gameObject);
+                ateSomething = true;
+            }
+        }
+
+        return ateSomething;
     }
 
     void TryMove(Vector2 direction)
@@ -58,6 +106,7 @@ public class PacStudentController : MonoBehaviour
     {
         nextPosition = position;
         isLerping = true;
+        audioSource.PlayOneShot(movingClip);
     }
 
     void ContinueLerp()
@@ -67,6 +116,7 @@ public class PacStudentController : MonoBehaviour
         {
             transform.position = nextPosition;
             isLerping = false;
+            CheckIfEating(currentInput);
         }
     }
 }
