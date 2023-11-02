@@ -169,6 +169,6 @@ public class LevelGenerator : MonoBehaviour
 
     private void AdjustCamera()
     {
-        Camera.main.orthographicSize = (levelMap.GetLength(0) * cellSize.y + cellSize.x);
+        Camera.main.orthographicSize = (levelMap.GetLength(0) * cellSize.y + cellSize.x + 3);
     }
 }
